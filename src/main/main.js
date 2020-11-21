@@ -3,7 +3,7 @@ import axios from 'axios';
 import CustomScroller from 'react-custom-scroller';
 import './main.css';
 
-// &launch_success=true&land_success=true&launch_year=2014
+
 
 const callApi = (data) => {
     let url = 'https://api.spaceXdata.com/v3/launches?limit=100';
@@ -18,6 +18,8 @@ const callApi = (data) => {
     })
     
 }
+
+
 
 const Main = props => {
     const [dataArr, setDataArr] = useState([]);
@@ -52,7 +54,7 @@ const Main = props => {
 
 
     return (
-        <div>
+        <div>            
             <div className="top-headbar">
                 <div className="container">
                     <h2>SpaceX Launch Programs</h2>
@@ -116,12 +118,15 @@ const Main = props => {
                                         <p><b>Successful Landing: </b>{res.launch_landing ? res.launch_landing : 'NA'}</p>
                                     </div>
                                 </div>
-                            </div>) : <div className="nodata-strip">No Data Found</div>}
-                    
+                            </div>) : <div className="nodata-strip">No Data Found</div>}                        
                         </div>
+
                     </div>
                 </div>
-            </div>
+            </div>        
+        <div className="footer-wrap">
+            <p><b>Developed by:</b> Manoj Singh</p>        
+        </div>
         </div>
     )
 }

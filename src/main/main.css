@@ -23,7 +23,7 @@
     width: 100%;
     position: sticky;
     top: 35px;
-    height: 90vh;
+    height: 82vh;
 }
 .spaceX-innerFilterBx h4{
     color: #000;
@@ -103,6 +103,7 @@
     font-size: 16px;
     flex: 0 0 42%;
     max-width: 0 0 42%;
+    cursor: pointer;
 }
 .filter-btnBx a.active{
     background: #7fbf01;
@@ -117,6 +118,19 @@
     font-size: 20px;
     font-weight: 600;
 }
+.footer-wrap{
+    position: relative;
+    width: calc(100% - 270px);
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    float: right;
+}
+
 /* -------- Media Queries Started Here --------- */
 @media only screen and (min-width: 1440px){
     .container{
