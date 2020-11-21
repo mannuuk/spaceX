@@ -130,7 +130,6 @@
     height: 48px;
     float: right;
 }
-
 /* -------- Media Queries Started Here --------- */
 @media only screen and (min-width: 1440px){
     .container{
@@ -158,6 +157,17 @@
         max-width: 50%;
         padding: 0 10px;
         margin-bottom: 20px;
+    }
+    .spaceX-innerFilterBx .index-module_inner__3tgFM {
+        padding-right: 0!important;
+        width: 100%!important;
+        right: 0!important;
+    }
+    .spaceX-innerFilterBx .index-module_wrapper__DnIZj{
+        margin-left: 0!important;
+    }
+    .index-module_track__BIi6w{
+        display: none;
     }
 }
 
@@ -187,5 +197,8 @@
         max-width: 100%;
         padding: 0;
         margin-bottom: 20px;
+    }
+    .footer-wrap{
+        width: 100%;
     }
 } 
